@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: goldenrod;
+    margin-bottom: 20px;
+
+}
+
+#phase {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#timer {
+    font-size: 3rem;
+    color: white;
+
+}
+
+#activities {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+}
+
+.message {
+    font-size: 1.5rem;
+    color: green;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: goldenrod;
+    color: bl;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Animation pour l'effet de fin */
+@keyframes flash {
+    0% { background-color: black; }
+    50% { background-color: gold; }
+    100% { background-color: black; }
+}
+
+.finished {
+    animation: flash 1s infinite;
+}
